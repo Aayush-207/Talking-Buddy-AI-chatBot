@@ -1,0 +1,44 @@
+{
+  "solAboK6AXYZ5BAiqdWQd47EoqI3": [
+    {
+      "role": "user",
+      "content": "hello"
+    },
+    {
+      "role": "bot",
+      "content": "Hi there!  How are you doing today?\n"
+    },
+    {
+      "role": "user",
+      "content": "tell me a funny incident now"
+    },
+    {
+      "role": "bot",
+      "content": "Okay,  I'd love to!  But before I tell you a funny incident, how *are* you doing today?  Let's chat a bit first.\n"
+    },
+    {
+      "role": "user",
+      "content": "i am not in mood of talking right now i am in mood of listning"
+    },
+    {
+      "role": "bot",
+      "content": "Okay, I understand.  Let's hear that funny incident then!\n"
+    },
+    {
+      "role": "user",
+      "content": "you tell"
+    },
+    {
+      "role": "bot",
+      "content": "Okay, here's one:  A snail walks into a bar and orders a drink.  After finishing, he asks the bartender, \"How much do I owe you?\" The bartender replies, \"For you?  It'll be a long time.\"\n"
+    },
+    {
+      "role": "user",
+      "content": "not funny tell another"
+    },
+    {
+      "role": "bot",
+      "content": "I'm sorry it didn't make you laugh.  Humor is subjective, after all. What kind of things do you usually enjoy?  Maybe I can find something more to your liking.\n"
+    }
+  ]
+}
