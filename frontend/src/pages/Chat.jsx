@@ -27,7 +27,7 @@ export default function Chat() {
     setInput('');
 
     try {
-      const response = await fetch('http://https://talking-buddy-ai-chatbot.onrender.com/api/message', {
+      const response = await fetch('https://talking-buddy-ai-chatbot.onrender.com/api/message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userId: user.uid, message: input }),
