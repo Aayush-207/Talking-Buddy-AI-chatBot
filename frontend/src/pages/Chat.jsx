@@ -8,6 +8,7 @@ export default function Chat() {
   const [user] = useAuthState(auth);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
+  const [isTyping, setIsTyping] = useState(false); // ✅ NEW STATE
   const messagesEndRef = useRef(null);
   const navigate = useNavigate();
 
@@ -17,7 +18,7 @@ export default function Chat() {
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+  }, [messages, isTyping]); // ✅ watch isTyping too
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -25,6 +26,7 @@ export default function Chat() {
     const userMessage = { role: 'user', content: input };
     setMessages(prev => [...prev, userMessage]);
     setInput('');
+    setIsTyping(true); // ✅ SHOW typing...
 
     try {
       const response = await fetch('https://talking-buddy-ai-chatbot.onrender.com/api/message', {
@@ -38,6 +40,8 @@ export default function Chat() {
       setMessages(prev => [...prev, botMessage]);
     } catch (error) {
       console.error('Error:', error);
+    } finally {
+      setIsTyping(false); // ✅ HIDE typing...
     }
   };
 
@@ -64,6 +68,15 @@ export default function Chat() {
             </span>
           </div>
         ))}
+
+        {isTyping && (
+          <div className="text-left">
+            <span className="inline-block p-3 rounded-lg bg-green-600 text-white animate-pulse">
+              🤖 Typing...
+            </span>
+          </div>
+        )}
+
         <div ref={messagesEndRef} />
       </div>
 
