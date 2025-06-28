@@ -1,10 +1,12 @@
-# 🗨️ Talking Buddy — AI Emotional Support Chatbot
+# 🗨️ Talking Buddy — AI Support Chatbot
 
-**Talking Buddy** is a modern AI chatbot that provides emotional and moral support.  
+**Talking Buddy** is a modern AI chatbot that provides emotional and moral support when someone feels lonely or in stress but has no one to share it.  
 It uses **Firebase** for Google Login & Signup, keeps user-specific chat history,  
 and integrates with Google’s **Gemini** API for AI replies.
 
 ---
+
+# Deployment Link: https://talkingbuddy.netlify.app/
 
 ## 🚀 Features
 
