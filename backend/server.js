@@ -11,7 +11,7 @@ const app = express();
 const port = 5000;
 const sentiment = new Sentiment();
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors());
 app.use(bodyParser.json());
 
 const conversationsFile = 'conversations.json';
