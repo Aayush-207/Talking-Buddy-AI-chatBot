@@ -50,6 +50,7 @@ User sentiment: ${userSentiment}.
 Adjust your tone.
 Don't repeat yourself.
 Correct the user gently if wrong.
+Try to carry conversation, don't sound dead or directly end up conversation
 
 Conversation so far:
 ${conversationText}
